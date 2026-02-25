@@ -7,9 +7,7 @@ public class Workshop {
 
     // Método que suma dos números enteros
     public int sumarDosNumeros(int a, int b) {
-        if (a >= b && a >= c) return a;
-    	if (b >= c) return b;
-    	return c;
+        return a+b;
     }
 
     // Método que encuentra el mayor de tres números enteros
