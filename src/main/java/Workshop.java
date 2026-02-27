@@ -58,7 +58,7 @@ public class Workshop {
 	k=1;
 	a=0;
 	b=1;
-	fibo[0]=0;
+	fib[0]=0;
 	while(k<n){
 		c=a+b;
 		a=b;
