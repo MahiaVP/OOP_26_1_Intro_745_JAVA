@@ -39,8 +39,8 @@ public class Workshop {
     public boolean esPrimo(int numero) {
 	int sum=0;
 	for(int i=1;i<=numero;i++){
-		float div=(float)(numero/i);
-		if(div==1){
+		int div=numero%i;
+		if(div==0){
 			sum++;
 		}
 	}
