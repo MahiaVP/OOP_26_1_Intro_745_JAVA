@@ -28,8 +28,8 @@ public class Workshop {
 
     // Método que calcula el factorial de un número entero
     public int factorial(int n) {
-        int f=n;
-	for(int i=n-1; i>0;i--){
+        int f=1;
+	for(int i=n; i>0;i--){
 		f=f*i;
 	}
         return f;
