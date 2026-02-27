@@ -54,17 +54,15 @@ public class Workshop {
     // Método que genera una serie de Fibonacci
     public int[] serieFibonacci(int n) {
         int[] fib = new int[n];
-	int a,b,c,k;
-	k=1;
+	int a,b,c;
 	a=0;
 	b=1;
 	fib[0]=0;
-	while(k<n){
+	for(int k=1;k<n;k++){
 		c=a+b;
 		a=b;
 		b=c;
 		fib[k]=c;
-		k++;
 	};
         return fib;
     }
