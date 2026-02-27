@@ -58,7 +58,7 @@ public class Workshop {
 	a=0;
 	b=1;
 	c=0;
-	for(int k=0;k<n;k++){
+	for(int k=0;k<=n;k++){
 		fib[k]=c;
 		c=a+b;
 		a=b;
