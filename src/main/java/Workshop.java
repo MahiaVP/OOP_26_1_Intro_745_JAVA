@@ -57,13 +57,13 @@ public class Workshop {
 	int a,b,c;
 	a=0;
 	b=1;
-	fib[0]=0;
 	for(int k=1;k<n;k++){
 		c=a+b;
 		a=b;
 		b=c;
 		fib[k]=c;
 	};
+	fib[0]=0;
         return fib;
     }
 
