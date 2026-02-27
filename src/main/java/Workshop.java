@@ -43,9 +43,10 @@ public class Workshop {
 		if(div==1){
 			sum++;
 		}
-		if(sum==2){
-			return true;
-		}
+	}
+
+	if(sum==2){
+		return true;
 	}
         return false;
     }
