@@ -37,8 +37,16 @@ public class Workshop {
 
     // Método que verifica si un número es primo
     public boolean esPrimo(int numero) {
-        // TODO: Implementar el método para verificar si un número es primo.
-        // Ejemplo: Si numero = 7, el resultado debería ser true.
+	int sum=0;
+	for(int i=1;i<=numero;i++){
+		float div=(float)(numero/i);
+		if(div==1){
+			sum++;
+		}
+		if(sum==2){
+			return true;
+		}
+	}
         return false;
     }
 
