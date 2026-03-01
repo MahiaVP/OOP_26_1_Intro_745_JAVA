@@ -76,7 +76,7 @@ public class Workshop {
 	for(int i;i<arreglo.length;i++){
 		sum=sum+arreglo[i];
 	}
-        return sumL;
+        return sum;
     }
 
     // Método que calcula el promedio de los elementos de un arreglo
