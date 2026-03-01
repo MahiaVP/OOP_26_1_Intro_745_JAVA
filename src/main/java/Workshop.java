@@ -73,7 +73,7 @@ public class Workshop {
     // Método que suma todos los elementos de un arreglo
     public int sumaElementos(int[] arreglo) {
         int sum=0;
-	for(int i;i<arreglo.length;i++){
+	for(int i=0;i<arreglo.length;i++){
 		sum=sum+arreglo[i];
 	}
         return sum;
@@ -88,7 +88,7 @@ public class Workshop {
 
     // Método que encuentra el elemento mayor en un arreglo
     public int encontrarElementoMayor(int[] arreglo) {
-        
+        return 0;
     }
 
     // Método que encuentra el elemento menor en un arreglo
