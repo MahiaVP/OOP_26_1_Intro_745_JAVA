@@ -95,7 +95,9 @@ public class Workshop {
 	int a=0;
 	for(int i=1; i<arreglo.length;i++){
 		if(arreglo[i]>arreglo[i-1]){
-			a=arreglo[i];
+			if(arreglo[i]>a){
+				a=arreglo[i];
+			}
 		}
 	}
         return a;
