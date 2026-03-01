@@ -92,7 +92,13 @@ public class Workshop {
 
     // Método que encuentra el elemento mayor en un arreglo
     public int encontrarElementoMayor(int[] arreglo) {
-        return 0;
+	int a=0;
+	for(int i=1; i<arreglo.length;i++){
+		if(arreglo[i]>arreglo[i-1]){
+			a=arreglo[i];
+		}
+	}
+        return a;
     }
 
     // Método que encuentra el elemento menor en un arreglo
