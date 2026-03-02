@@ -142,7 +142,7 @@ public class Workshop {
         for(int i=0; i<arreglo.length; i++){
 	int t=0;
 		for(int j=i+1;j<arreglo.length;j++){
-			if(arreglo[i]<arreglo[j]){
+			if(arreglo[i]>arreglo[j]){
 				t=arreglo[i];
 				arreglo[i]=arreglo[j];
 				arreglo[j]=t;
@@ -150,7 +150,7 @@ public class Workshop {
 		}
 		
 	}
-        return new int[0];
+        return arreglo;
     }
 
     // Método que elimina los duplicados de un arreglo
