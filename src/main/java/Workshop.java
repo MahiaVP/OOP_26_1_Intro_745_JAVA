@@ -1,5 +1,6 @@
 import java.util.List;
 
+
 public class Workshop {
     public static void main(String[] args) {
 
@@ -155,16 +156,22 @@ public class Workshop {
 
     // Método que elimina los duplicados de un arreglo
     public int[] eliminarDuplicados(int[] arreglo) {
-        // TODO: Implementar el método para eliminar los duplicados de un arreglo.
-        // Ejemplo: Si arreglo = [1, 2, 2, 3, 4, 4, 5], el resultado debería ser [1, 2, 3, 4, 5].
-        return new int[0];
+        //ni idea
+	return new int[0];
     }
 
     // Método que combina dos arreglos en uno solo
     public int[] combinarArreglos(int[] arreglo1, int[] arreglo2) {
-        // TODO: Implementar el método para combinar dos arreglos en uno solo.
-        // Ejemplo: Si arreglo1 = [1, 2, 3, 4, 5] y arreglo2 = [6, 7, 8], el resultado debería ser [1, 2, 3, 4, 5, 6, 7, 8].
-        return new int[0];
+        int[] arr = new int [arreglo1.length+arreglo2.length];
+	for(int i=0;i<arr.length;i++){
+		if(i<arreglo1.length){
+			arr[i]=arreglo1[i];
+		}else{
+			arr[i]=arreglo2[i-arreglo1.length];
+		}
+	}
+	
+        return arr;
     }
 
     // Método que rota un arreglo n posiciones
