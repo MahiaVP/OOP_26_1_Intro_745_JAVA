@@ -178,11 +178,11 @@ public class Workshop {
     public int[] rotarArreglo(int[] arreglo, int posiciones) {
         
 	for(int i=0; i<posiciones;i++){
-		int t=arreglo[0];
 		for(int j=0;j<arreglo.length-1;j++){
+			int k = arreglo[j];
 			arreglo[j]=arreglo[j+1];
+			arreglo[j+1]=k;
 		}
-		arreglo[arreglo.length-1]=t;
 	}
         return arreglo;
     }
