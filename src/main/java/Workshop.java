@@ -190,7 +190,7 @@ public class Workshop {
 			for(int j=arreglo.length-1;j>0;j--){
 				int k = arreglo[j];
 				arreglo[j]=arreglo[j-1];
-				arreglo[j+1]=k;
+				arreglo[j-1]=k;
 			}
 
 		}
