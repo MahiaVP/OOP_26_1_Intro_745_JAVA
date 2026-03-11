@@ -221,7 +221,7 @@ public class Workshop {
 		inv = cadena.charAt(i)+inv; 
 	} 
 
-	if(inv==cadena){
+	if(inv.equals(cadena)){
 		return true;
 	}
         return false;
