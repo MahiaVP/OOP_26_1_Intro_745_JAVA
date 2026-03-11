@@ -179,7 +179,7 @@ public class Workshop {
         int j =0;
 	for(int i=0; i<posiciones;i++){
 		int t=arreglo[0];
-		while(j<arreglo.length){
+		while(j<arreglo.length-1){
 			arreglo[j]=arreglo[j+1];
 			j=j+1;
 		}
