@@ -193,6 +193,7 @@ public class Workshop {
 				arreglo[j+1]=k;
 			}
 
+		}
 	}
         return arreglo;
     }
