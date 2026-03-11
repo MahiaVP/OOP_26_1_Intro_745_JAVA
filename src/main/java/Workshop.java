@@ -183,7 +183,7 @@ public class Workshop {
 			arreglo[j]=arreglo[j+1];
 			j=j+1;
 		}
-		arreglo[arreglo.length-1]=t;
+		arreglo[arreglo.length]=t;
 	}
         return arreglo;
     }
