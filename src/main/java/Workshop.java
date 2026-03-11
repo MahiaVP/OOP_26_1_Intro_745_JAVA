@@ -207,11 +207,7 @@ public class Workshop {
 
     // Método que invierte una cadena
     public String invertirCadena(String cadena) {
-        String inv = "";
-	for(int i=0; i<cadena.length();i++){
-		inv =cadena.charAt(i)+inv;
-	}
-        return inv;
+        return new StringBuilder(cadena).reverse().toString();
     }
 
     // Método que verifica si una cadena es un palíndromo
