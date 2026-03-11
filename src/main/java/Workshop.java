@@ -177,7 +177,7 @@ public class Workshop {
     // Método que rota un arreglo n posiciones
     public int[] rotarArreglo(int[] arreglo, int posiciones) {
         
-	for(int i=1; i<posiciones;i++){
+	for(int i=0; i<posiciones;i++){
 		for(int j=0;j<arreglo.length-1;j++){
 			int k = arreglo[j];
 			arreglo[j]=arreglo[j+1];
