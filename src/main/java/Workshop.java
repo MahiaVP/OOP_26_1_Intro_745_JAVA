@@ -219,12 +219,15 @@ public class Workshop {
 
     // Método que verifica si una cadena es un palíndromo
     public boolean esPalindromo(String cadena) {
-        String inv = ""; 
+        String inv = "";
 	for(int i=0; i<cadena.length();i++){ 
-		inv = cadena.charAt(i)+inv; 
+		inv = cadena.charAt(i)+inv;
 	} 
-
-	if(inv.equals(cadena)){
+    String scadena = cadena.replaceAll(" ","");
+    String sinv = inv.replaceAll(" ","");
+    scadena=scadena.toLowerCase();
+    sinv=sinv.toLowerCase();
+	if(sinv.equals(scadena)){
 		return true;
 	}
         return false;
