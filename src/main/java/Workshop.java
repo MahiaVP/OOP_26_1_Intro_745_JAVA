@@ -205,7 +205,7 @@ public class Workshop {
 
     // Método que cuenta los caracteres en una cadena
     public int contarCaracteres(String cadena) {
-        return cadena.length;
+        return cadena.length();
     }
 
     // Método que invierte una cadena
