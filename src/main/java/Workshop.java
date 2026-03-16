@@ -275,8 +275,12 @@ public class Workshop {
     public String convertirABinario(int numero) {
         String binario = "";
 	while(numero>0){
-		binario = (numero%2)+binario;
+		binario = Math.abs(numero % 2) + binario;
 		numero=numero/2;
+	}
+
+	if (numero<0){
+		binario="-"+binario;
 	}
         return binario;
     }
