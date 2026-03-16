@@ -260,29 +260,25 @@ public class Workshop {
 
     // Método que valida un correo electrónico
     public boolean validarCorreoElectronico(String correo) {
-	if(correo.contains(" ")){
-		return false;
-	}else if(correo.matches(".*[^a-zA-Z0-9\\s].*")){
-		return false;
-	}else if(correo.contains("@")){
-		return true;
-	}
+	
 	return false;
     }
 
     // Método que calcula el promedio de una lista de números
 
     public double promedioLista(List<Integer> lista) {
-        // TODO: Implementar el método para calcular el promedio de una lista de números.
-        // Ejemplo: Si lista = [1, 2, 3, 4, 5], el resultado debería ser 3.0.
+        
         return 0.0;
     }
 
     // Método que convierte un número en su representación binaria
     public String convertirABinario(int numero) {
-        // TODO: Implementar el método para convertir un número en su representación binaria.
-        // Ejemplo: Si numero = 10, el resultado debería ser "1010".
-        return "";
+        String binario = "";
+	while(numero>0){
+		binario = (numero%2)+binario;
+		numero=numero/2;
+	}
+        return binario;
     }
 
     // Método que convierte un número en su representación hexadecimal
