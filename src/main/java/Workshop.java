@@ -275,7 +275,7 @@ public class Workshop {
     public String convertirABinario(int numero) {
         String binario = "";
 	if(numero<0){
-		while(numero>0){
+		while(Math.abs(numero)>0){
 			binario = Math.abs(numero % 2) + binario;
 			numero=numero/2;
 		}
