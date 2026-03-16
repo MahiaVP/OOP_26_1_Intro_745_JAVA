@@ -274,14 +274,22 @@ public class Workshop {
     // Método que convierte un número en su representación binaria
     public String convertirABinario(int numero) {
         String binario = "";
-	while(numero>0){
-		binario = Math.abs(numero % 2) + binario;
-		numero=numero/2;
-	}
+	if(numero<0){
+		while(numero>0){
+			binario = Math.abs(numero % 2) + binario;
+			numero=numero/2;
+		}
+	}else if(numero>0){
+		while(numero>0){
+			binario =(numero % 2) + binario;
+			numero=numero/2;
+		}
 
-	if (numero<0){
-		binario="-"+binario;
+	}else{
+		binario = "0";
 	}
+	
+
         return binario;
     }
 
