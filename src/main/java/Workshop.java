@@ -260,8 +260,15 @@ public class Workshop {
 
     // Método que valida un correo electrónico
     public boolean validarCorreoElectronico(String correo) {
-        // TODO: Implementar el método para validar un correo electrónico.
-        // Ejemplo: Si correo = "test@example.com", el resultado debería ser true.
+        if(correo.contains("@")){
+		if(correo.contains(" ")){
+			return false;
+		}else if(correo.matches(".*\\W.*")){
+			return false;
+		}else{
+			return true;
+		}
+	}
         return false;
     }
 
