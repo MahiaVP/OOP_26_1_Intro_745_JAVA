@@ -279,6 +279,7 @@ public class Workshop {
 			binario = Math.abs(numero % 2) + binario;
 			numero=numero/2;
 		}
+	binario="-"+binario;
 	}else if(numero>0){
 		while(numero>0){
 			binario =(numero % 2) + binario;
