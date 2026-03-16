@@ -260,16 +260,14 @@ public class Workshop {
 
     // Método que valida un correo electrónico
     public boolean validarCorreoElectronico(String correo) {
-        if(correo.contains("@")){
-		if(correo.contains(" ")){
-			return false;
-		}else if(correo.matches(".*\\W.*")){
-			return false;
-		}else{
-			return true;
-		}
+	if(correo.contains(" ")){
+		return false;
+	}else if(correo.matches(".*[^a-zA-Z0-9\\s].*")){
+		return false;
+	}else if(correo.contains("@")){
+		return true;
 	}
-        return false;
+	return false;
     }
 
     // Método que calcula el promedio de una lista de números
