@@ -297,8 +297,17 @@ public class Workshop {
     // Método que calcula el promedio de una lista de números
 
     public double promedioLista(List<Integer> lista) {
-        
-        return 0.0;
+        int sum=0;
+		int c=0;
+		for(int n : lista){
+			sum +=n;
+			c++;
+		}
+		if(c==0){
+			return 0.0;
+		}
+		double div=(double)(sum/c);
+        return div;
     }
 
     // Método que convierte un número en su representación binaria
