@@ -157,28 +157,36 @@ public class Workshop {
     // Método que elimina los duplicados de un arreglo
     public int[] eliminarDuplicados(int[] arreglo) {
 	int c=0;
+	if(arreglo.length==0){
+		return arreglo;
+	}
 	for(int i=0;i<arreglo.length;i++){
 		for(int j=i+1;j<arreglo.length;j++){
 			if(arreglo[j]==arreglo[i]){
 				c++;
+				if(c==arreglo.length-1){
+					break;
+				}
 			}
+		}
+		if(c==arreglo.length-1){
+			break;
 		}
 	}
 	
 	int[] arr= new int[arreglo.length-c];
 	arr[0]=arreglo[0];
 
-	for(int i=0;i<arr.length;i++){	
-		
+	for(int i=1;i<arr.length;i++){
 		for(int j=i+1;j<arreglo.length;j++){
-			if(arreglo[j]!=arr[i]){
+			if(arreglo[j]!=arr[i-1]){
 				arr[i]=arreglo[j];
 				break;
 			}
 		}
 	}
 
-	return new int[0];
+	return arr;
     }
 
     // Método que combina dos arreglos en uno solo
