@@ -312,32 +312,89 @@ public class Workshop {
 
     // Método que convierte un número en su representación binaria
     public String convertirABinario(int numero) {
-        String binario = "";
-	if(numero<0){
-		while(Math.abs(numero)>0){
-			binario = Math.abs(numero % 2) + binario;
-			numero=numero/2;
+		String binario = "";
+		if(numero<0){
+			while(Math.abs(numero)>0){
+				binario = Math.abs(numero % 2) + binario;
+				numero=numero/2;
+			}
+		binario="-"+binario;
+		}else if(numero>0){
+			while(numero>0){
+				binario =(numero % 2) + binario;
+				numero=numero/2;
+			}
+		}else{
+			binario = "0";
 		}
-	binario="-"+binario;
-	}else if(numero>0){
-		while(numero>0){
-			binario =(numero % 2) + binario;
-			numero=numero/2;
-		}
-
-	}else{
-		binario = "0";
-	}
-	
 
         return binario;
     }
 
     // Método que convierte un número en su representación hexadecimal
     public String convertirAHexadecimal(int numero) {
-        // TODO: Implementar el método para convertir un número en su representación hexadecimal.
-        // Ejemplo: Si numero = 255, el resultado debería ser "FF".
-        return "";
+		String hexa = "";
+		if(numero<0){
+			while(Math.abs(numero)>0){
+				if(Math.abs(numero % 16)>10){
+					switch (Math.abs(numero % 16)){
+						case 10:
+							hexa="A" + hexa;
+							break;
+						case 11:
+							hexa="B" + hexa;
+							break;
+						case 12:
+							hexa="C" + hexa;
+							break;
+						case 13:
+							hexa="D" + hexa;
+							break;
+						case 14:
+							hexa="E" + hexa;
+							break;
+						case 15:
+							hexa="F" + hexa;
+							break;
+					}
+				}else{
+					hexa= Math.abs(numero % 16) + hexa;
+				}
+				numero=numero/16;
+			}
+			hexa="-"+hexa;
+		}else if(numero>0){
+			while(numero>0){
+				if(Math.abs(numero % 16)>10){
+					switch (Math.abs(numero % 16)){
+						case 10:
+							hexa="A" + hexa;
+							break;
+						case 11:
+							hexa="B" + hexa;
+							break;
+						case 12:
+							hexa="C" + hexa;
+							break;
+						case 13:
+							hexa="D" + hexa;
+							break;
+						case 14:
+							hexa="E" + hexa;
+							break;
+						case 15:
+							hexa="F" + hexa;
+							break;
+					}
+				}else{
+					hexa= Math.abs(numero % 16) + hexa;
+				}
+				numero=numero/16;
+			}
+		}else{
+			hexa = "0";
+		}
+        return hexa;
     }
 
     // Método para el juego de piedra, papel, tijera, lagarto, Spock
