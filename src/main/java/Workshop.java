@@ -406,7 +406,41 @@ public class Workshop {
         // - Tijera vence a Papel y Lagarto
         // - Lagarto vence a Spock y Papel
         // - Spock vence a Tijera y Piedra
+	
+	String comp="";
+	switch((int)(Math.random()*5+1)){
 
+		case 1:
+			comp="Piedra";
+			break;
+		case 2:
+			comp="Papel";
+			break;
+		case 3:
+			comp="Tijera";
+			break;
+		case 4:
+			comp="Lagarto";
+			break;
+		case 5:
+			comp="Spock";
+			break;
+	}
+	if(comp=="Piedra" && (eleccionUsuario=="Piedra" || eleccionUsuario=="Lagarto")){
+		return "Perdiste";
+	}else if(comp=="Papel" && (eleccionUsuario=="Piedra" || eleccionUsuario=="Spock")){
+		return "Perdiste";
+	}else if(comp=="Tijera" && (eleccionUsuario=="Papel" || eleccionUsuario=="Lagarto")){
+		return "Perdiste";
+	}else if(comp=="Lagarto" && (eleccionUsuario=="Papel" || eleccionUsuario=="Spock")){
+		return "Perdiste";
+	}else if(comp=="Spock" && (eleccionUsuario=="Tijera" || eleccionUsuario=="Piedra")){
+		return "Perdiste";
+	}else if(comp.equals(eleccionUsario){
+		return "Empate";
+	}else{
+		return "Ganaste";
+	}
 
         // El método debe retornar un mensaje indicando el resultado del juego.
         // Ejemplo: Si la eleccionUsuario es "Piedra", el resultado podría ser "Ganaste" o "Perdiste" dependiendo de la elección de la computadora.
