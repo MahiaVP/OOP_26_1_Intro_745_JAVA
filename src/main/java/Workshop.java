@@ -436,15 +436,11 @@ public class Workshop {
 		return "Perdiste";
 	}else if(comp=="Spock" && (eleccionUsuario=="Tijera" || eleccionUsuario=="Piedra")){
 		return "Perdiste";
-	}else if(comp.equals(eleccionUsario){
+	}else if(comp.equals(eleccionUsuario)){
 		return "Empate";
 	}else{
 		return "Ganaste";
 	}
-
-        // El método debe retornar un mensaje indicando el resultado del juego.
-        // Ejemplo: Si la eleccionUsuario es "Piedra", el resultado podría ser "Ganaste" o "Perdiste" dependiendo de la elección de la computadora.
-        return "";
     }
 
     public String pptls2(String game[]) {
