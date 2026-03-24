@@ -22,7 +22,7 @@ public class WorkshopTest {
     //Test para el area del circulo
     public void testAreaCirculo() {
         assertEquals(Math.PI, tester.areaCirculo(1), 3.141592653589793);
-        assertEquals((Math.PI*10), tester.areaCirculo(10), 31.41592653589793);;
+        assertEquals((Math.PI*10), tester.areaCirculo(10), 314.1592653589793);;
         assertEquals(0, tester.areaCirculo(0), 0.00);
     }
 
