@@ -259,6 +259,9 @@ public class Workshop {
 
     // Método que cuenta el número de palabras en una cadena
     public int contarPalabras(String cadena) {
+	if(cadena==""){
+		return 0;
+	}
         return cadena.split("\\s").length;
     }
 
