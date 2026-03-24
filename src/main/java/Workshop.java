@@ -469,8 +469,106 @@ public class Workshop {
     }
 
     public String zoodiac(int day, int month) {
-        return "";
-    }
+	 switch(month){
+		case 1:
+			if(day<21){
+				return "Capricorn";
+			}else if(day<31){
+				return "Aquarius";
+			}else{
+				return "Invalid date";
+			}
+		case 2:
+			if(day<20){
+				return "Aquarius";
+			}else if(day<28){
+				return "Pisces";
+			}else{
+				return "Invalid date";
+			}
+		case 3:
+			if(day<21){
+				return "Pisces";
+			}else if(day<31){
+				return "Aries";
+			}else{
+				return "Invalid date";
+			}
+		case 4:
+			if(day<21){
+				return "Aries";
+			}else if(day<30){
+				return "Taurus";
+			}else{
+				return "Invalid date";
+			}
+		case 5:
+			if(day<21){
+				return "Taurus";
+			}else if(day<31){
+				return "Gemini";
+			}else{
+				return "Invalid date";
+			}
+		case 6:
+			if(day<22){
+				return "Gemini";
+			}else if(day<30){
+				return "Cancer";
+			}else{
+				return "Invalid date";
+			}
+		case 7:
+			if(day<23){
+				return "Cancer";
+			}else if(day<31){
+				return "Leo";
+			}else{
+				return "Invalid date";
+			}
+		case 8:
+			if(day<24){
+				return "Leo";
+			}else if(day<31){
+				return "Virgo";
+			}else{
+				return "Invalid date";
+			}
+		case 9:
+			if(day<24){
+				return "Virgo";
+			}else if(day<30){
+				return "Libra";
+			}else{
+				return "Invalid date";
+			}
+		case 10:
+			if(day<24){
+				return "Libra";
+			}else if(day<31){
+				return "Scorpio";
+			}else{
+				return "Invalid date";
+			}
+		case 11:
+			if(day<21){
+				return "Scorpio";
+			}else if(day<30){
+				return "Sagittarius";
+			}else{
+				return "Invalid date";
+			}
+		case 12:
+			if(day<22){
+				return "Sagittarius";
+			}else if(day<31){
+				return "Capricorn";
+			}else{
+				return "Invalid date";
+			}
+		}
+	return "Invalid date";
+	}
 
 
 }
