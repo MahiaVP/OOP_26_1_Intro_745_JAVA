@@ -462,7 +462,7 @@ public class Workshop {
 }
 
     public double areaCirculo(double radio) {
-        return 0.0;
+        return Math.PI*radio*radio;
     }
 
     public String zoodiac(int day, int month) {
