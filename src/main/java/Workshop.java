@@ -484,7 +484,7 @@ public class Workshop {
 			}else if(day<28){
 				return "Pisces";
 			}else{
-				return "Invalid date";
+				return "Invalid Date";
 			}
 		case 3:
 			if(day<21){
