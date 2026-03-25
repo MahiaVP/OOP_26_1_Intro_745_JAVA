@@ -73,11 +73,11 @@ public class Workshop {
 
     // Método que suma todos los elementos de un arreglo
     public int sumaElementos(int[] arreglo) {
-        int sum=0;
+        int suma=0;
 	for(int i=0;i<arreglo.length;i++){
-		sum=sum+arreglo[i];
+		suma=suma+arreglo[i];
 	}
-        return sum;
+        return suma;
     }
 
     // Método que calcula el promedio de los elementos de un arreglo
